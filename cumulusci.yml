@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.55.0'
+project:
+    name: refactored-potato
+    package:
+        name: refactored-potato
+        api_version: '52.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/refactored-potato/tests
+            options:
+                outputdir: robot/refactored-potato/results
+
+    robot_testdoc:
+        options:
+            path: robot/refactored-potato/tests
+            output: robot/refactored-potato/doc/refactored-potato_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
