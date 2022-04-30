@@ -13,7 +13,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Incomplete</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Incomplete</label>
             </value>
             <value>
